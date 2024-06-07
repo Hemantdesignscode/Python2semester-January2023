@@ -1,0 +1,10 @@
+
+import pandas as pd
+import numpy
+
+
+""" THE * OPERATOR BEFORE THE RANGE IS AN ARGUMENT UNPACKING OPERATOR WHICH MEANS IT PRINTS THE ELEMENTS OF THE RANGE RATHER 
+THAN JUST [RANGE(0,20)] """
+s1 = pd.Series([*range(0,20)])
+
+print(f"\nTHIS IS THE PANDAS SERIES CONVERTED INTO AN ARRAY ∨ \n{pd.Series.to_numpy(s1).reshape(4,5)}\n")
